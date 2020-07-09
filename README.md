@@ -23,7 +23,7 @@ pip install git+https://github.com//.git
 
 Then import the package:
 ```python
-import swagger_client 
+import bloxonednsdata 
 ```
 
 ### Setuptools
@@ -37,7 +37,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import swagger_client
+import bloxonednsdata
 ```
 
 ## Getting Started
@@ -47,19 +47,19 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import bloxonednsdata
+from bloxonednsdata.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = bloxonednsdata.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RecordApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DataRecord() # DataRecord | 
+api_instance = bloxonednsdata.RecordApi(bloxonednsdata.ApiClient(configuration))
+body = bloxonednsdata.DataRecord() # DataRecord | 
 
 try:
     # Create the Record object.
@@ -72,7 +72,7 @@ except ApiException as e:
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost/api/ddi.dns.data/v1/*
+All URIs are relative to *https://csp.infoblox.com/api/ddi.dns.data/v1/*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
